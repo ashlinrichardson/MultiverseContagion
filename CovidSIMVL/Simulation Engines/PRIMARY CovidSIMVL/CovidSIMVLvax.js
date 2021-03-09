@@ -120,168 +120,28 @@ try {
         }
     }
 
-    var canp1;
-    if (use_html) {
-        canp1 = document.getElementById("canp1");
-        canp1.width = 300;
-        canp1.height = 250;
-        canp1.style.top = "75px";
-        canp1.style.left = "100px";
+
+    var ctx1, ctx2, ctx2, ctx4, ctx5, ctx6, ctx7, ctx8, ctx9;
+    var canp1, canp2, canp3, canp4, canp5, canp6, canp7, canp8, canp9;
+    var style_top = ["75px", "75px", "75px", "375px", "375px", "375px", "675px", "675px", "675px"]
+    var style_left = ["100px", "400px", "700px", "100px", "400px", "700px", "100px", "400px", "700px"]
+
+    if(use_html){
+        for(var i = 1; i <= 9; i++){
+          var s = i.toString()
+          var ts = style_top[i - 1].toString()
+          var ls = style_left[i - 1].toString()
+          eval('canp' + s + ' = document.getElementById("canp' + s + '");')
+          eval('canp' + s + '.width = 300;')
+          eval('canp' + s + '.height = 250;')
+          eval('canp' + s + '.style.top = "' + ts + 'px";')
+          eval('canp' + s + '.style.left = "' + ls + 'px";')
+          eval('ctx' + s + ' = canp' + s + '.getContext("2d");')
+          eval('ctx' + s + '.fillStyle = "MidnightBlue";')
+          eval('ctx' + s + '.fillRect(0, 0, canp' + s + '.width, canp' + s + '.height);')
+          eval('drawc(10, 10, 8, "green", ctx' + s + ');')
+        }
     }
-
-    var ctx1;
-    if (use_html) {
-        ctx1 = canp1.getContext("2d");
-        ctx1.fillStyle = "MidnightBlue";
-        ctx1.fillRect(0, 0, canp1.width, canp1.height);
-        drawc(10, 10, 8, "green", ctx1);
-    }
-
-    // ********************************************************
-
-    var canp2;
-    if (use_html) {
-        canp2 = document.getElementById("canp2");
-        canp2.width = 300;
-        canp2.height = 250;
-        canp2.style.top = "75px";
-        canp2.style.left = "400px";
-    }
-
-    var ctx2;
-    if (use_html) {
-        ctx2 = canp2.getContext("2d");
-        ctx2.fillStyle = "MidnightBlue";
-        ctx2.fillRect(0, 0, canp2.width, canp2.height);
-        drawc(10, 10, 8, "green", ctx2);
-    }
-    // *********************************************************************
-
-    var canp3;
-    if (use_html) {
-        canp3 = document.getElementById("canp3");
-        canp3.width = 300;
-        canp3.height = 250;
-        canp3.style.top = "75px";
-        canp3.style.left = "700px";
-    }
-
-    var ctx3;
-    if (use_html) {
-        ctx3 = canp3.getContext("2d");
-        ctx3.fillStyle = "MidnightBlue";
-        ctx3.fillRect(0, 0, canp3.width, canp3.height);
-        drawc(10, 10, 8, "green", ctx3);
-    }
-    // ********************************************************
-
-    var canp4;
-    if (use_html) {
-        canp4 = document.getElementById("canp4");
-        canp4.width = 300;
-        canp4.height = 250;
-        canp4.style.top = "375px";
-        canp4.style.left = "100px";
-    }
-
-    var ctx4;
-    if (use_html) {
-        ctx4 = canp4.getContext("2d");
-        ctx4.fillStyle = "MidnightBlue";
-        ctx4.fillRect(0, 0, canp4.width, canp4.height);
-        drawc(10, 10, 8, "green", ctx4);
-    }
-    // ********************************************************
-
-    var canp5;
-    if (use_html) {
-        canp5 = document.getElementById("canp5");
-        canp5.width = 300;
-        canp5.height = 250;
-        canp5.style.top = "374px";
-        canp5.style.left = "400px";
-    }
-
-    var ctx5;
-    if (use_html) {
-        ctx5 = canp5.getContext("2d");
-        ctx5.fillStyle = "MidnightBlue";
-        ctx5.fillRect(0, 0, canp5.width, canp5.height);
-        drawc(10, 10, 8, "green", ctx5);
-    }
-    // ********************************************************
-
-    var canp6;
-    if (use_html) {
-        canp6 = document.getElementById("canp6");
-        canp6.width = 300;
-        canp6.height = 250;
-        canp6.style.top = "375px";
-        canp6.style.left = "700px";
-    }
-
-    var ctx6;
-    if (use_html) {
-        ctx6 = canp6.getContext("2d");
-        ctx6.fillStyle = "MidnightBlue";
-        ctx6.fillRect(0, 0, canp6.width, canp6.height);
-        drawc(10, 10, 8, "green", ctx6);
-    }
-    // ********************************************************
-
-    var canp7;
-    if (use_html) {
-        canp7 = document.getElementById("canp7");
-        canp7.width = 300;
-        canp7.height = 250;
-        canp7.style.top = "675px";
-        canp7.style.left = "100px";
-    }
-
-    var ctx7;
-    if (use_html) {
-        ctx7 = canp7.getContext("2d");
-        ctx7.fillStyle = "MidnightBlue";
-        ctx7.fillRect(0, 0, canp7.width, canp7.height);
-        drawc(10, 10, 8, "green", ctx7);
-    }
-    // ********************************************************
-
-    var canp8;
-    if (use_html) {
-        canp8 = document.getElementById("canp8");
-        canp8.width = 300;
-        canp8.height = 250;
-        canp8.style.top = "675px";
-        canp8.style.left = "400px";
-    }
-
-    var ctx8;
-    if (use_html) {
-        ctx8 = canp8.getContext("2d");
-        ctx8.fillStyle = "MidnightBlue";
-        ctx8.fillRect(0, 0, canp8.width, canp8.height);
-        drawc(10, 10, 8, "green", ctx8);
-    }
-    // ********************************************************
-
-    var canp9;
-    if (use_html) {
-        canp9 = document.getElementById("canp9");
-        canp9.width = 300;
-        canp9.height = 250;
-        canp9.style.top = "675px";
-        canp9.style.left = "700px";
-    }
-
-    var ctx9;
-    if (use_html) {
-        ctx9 = canp9.getContext("2d");
-        ctx9.fillStyle = "MidnightBlue";
-        ctx9.fillRect(0, 0, canp9.width, canp9.height);
-        drawc(10, 10, 8, "green", ctx9);
-    }
-
 
     // ***************************************************************************
 
