@@ -135,11 +135,6 @@ try {
         ctx1.fillStyle = "MidnightBlue";
         ctx1.fillRect(0, 0, canp1.width, canp1.height);
         drawc(10, 10, 8, "green", ctx1);
-        /*
-        canp1.addEventListener("mousemove", mouseMove1, {passive:true});
-        canp1.addEventListener("mouseout", mouseOut1, {passive:true});
-        canp1.addEventListener("click", mouseClick1, {passive:true});
-        */
     }
 
     // ********************************************************
@@ -159,11 +154,6 @@ try {
         ctx2.fillStyle = "MidnightBlue";
         ctx2.fillRect(0, 0, canp2.width, canp2.height);
         drawc(10, 10, 8, "green", ctx2);
-        /*
-        canp2.addEventListener("mousemove", mouseMove2, {passive:true});
-        canp2.addEventListener("mouseout", mouseOut2, {passive:true});
-        canp2.addEventListener("click", mouseClick2, {passive:true});
-        */
     }
     // *********************************************************************
 
@@ -182,11 +172,6 @@ try {
         ctx3.fillStyle = "MidnightBlue";
         ctx3.fillRect(0, 0, canp3.width, canp3.height);
         drawc(10, 10, 8, "green", ctx3);
-        /*
-        canp3.addEventListener("mousemove", mouseMove3, {passive:true});
-        canp3.addEventListener("mouseout", mouseOut3, {passive:true});
-        canp3.addEventListener("click", mouseClick3, {passive:true});
-        */
     }
     // ********************************************************
 
@@ -205,11 +190,6 @@ try {
         ctx4.fillStyle = "MidnightBlue";
         ctx4.fillRect(0, 0, canp4.width, canp4.height);
         drawc(10, 10, 8, "green", ctx4);
-        /*
-        canp4.addEventListener("mousemove", mouseMove4, {passive:true});
-        canp4.addEventListener("mouseout", mouseOut4, {passive:true});
-        canp4.addEventListener("click", mouseClick4, {passive:true});
-        */
     }
     // ********************************************************
 
@@ -228,11 +208,6 @@ try {
         ctx5.fillStyle = "MidnightBlue";
         ctx5.fillRect(0, 0, canp5.width, canp5.height);
         drawc(10, 10, 8, "green", ctx5);
-        /*
-        canp5.addEventListener("mousemove", mouseMove5, {passive:true});
-        canp5.addEventListener("mouseout", mouseOut5, {passive:true});
-        canp5.addEventListener("click", mouseClick5, {passive:true});
-        */
     }
     // ********************************************************
 
@@ -251,11 +226,6 @@ try {
         ctx6.fillStyle = "MidnightBlue";
         ctx6.fillRect(0, 0, canp6.width, canp6.height);
         drawc(10, 10, 8, "green", ctx6);
-        /*
-        canp6.addEventListener("mousemove", mouseMove6, {passive:true});
-        canp6.addEventListener("mouseout", mouseOut6, {passive:true});
-        canp6.addEventListener("click", mouseClick6, {passive:true});
-        */
     }
     // ********************************************************
 
@@ -274,11 +244,6 @@ try {
         ctx7.fillStyle = "MidnightBlue";
         ctx7.fillRect(0, 0, canp7.width, canp7.height);
         drawc(10, 10, 8, "green", ctx7);
-        /*
-        canp7.addEventListener("mousemove", mouseMove7, {passive:true});
-        canp7.addEventListener("mouseout", mouseOut7, {passive:true});
-        canp7.addEventListener("click", mouseClick7, {passive:true});
-        */
     }
     // ********************************************************
 
@@ -297,11 +262,6 @@ try {
         ctx8.fillStyle = "MidnightBlue";
         ctx8.fillRect(0, 0, canp8.width, canp8.height);
         drawc(10, 10, 8, "green", ctx8);
-        /*
-        canp8.addEventListener("mousemove", mouseMove8, {passive:true});
-        canp8.addEventListener("mouseout", mouseOut8, {passive:true});
-        canp8.addEventListener("click", mouseClick8, {passive:true});
-        */
     }
     // ********************************************************
 
@@ -320,11 +280,6 @@ try {
         ctx9.fillStyle = "MidnightBlue";
         ctx9.fillRect(0, 0, canp9.width, canp9.height);
         drawc(10, 10, 8, "green", ctx9);
-        /*
-        canp9.addEventListener("mousemove", mouseMove9, {passive:true});
-        canp9.addEventListener("mouseout", mouseOut9, {passive:true});
-        canp9.addEventListener("click", mouseClick9, {passive:true});
-        */
     }
 
 
@@ -415,7 +370,6 @@ try {
     }
 
     function mouseClick5() {
-        //
     }
 
     function mouseMove6() {
@@ -427,7 +381,6 @@ try {
     }
 
     function mouseClick6() {
-        //
     }
 
     function mouseMove7() {
@@ -439,7 +392,6 @@ try {
     }
 
     function mouseClick7() {
-        //
     }
 
     function mouseMove8() {
@@ -451,7 +403,6 @@ try {
     }
 
     function mouseClick8() {
-        //
     }
 
     function mouseMove9() {
@@ -463,7 +414,6 @@ try {
     }
 
     function mouseClick9() {
-        //
     }
 
 
