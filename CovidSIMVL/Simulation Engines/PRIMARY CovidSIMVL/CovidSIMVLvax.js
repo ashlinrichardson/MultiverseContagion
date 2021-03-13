@@ -143,10 +143,9 @@ try {
         }
     }
 
-    // ***************************************************************************
-
-    function mouseMove1() {
-        document.getElementById("canp1").style.border = "thick solid yellow";
+    for(var i = 1; i <= 9; i++){
+        var i_s = i.toString()
+        eval('function mouseMove' + i_s + '(){ console.log("here"); document.getElementById("canp' + i_s + '").style.border = "thick solid yellow"}')
     }
 
     function mouseOut1() {
@@ -155,12 +154,6 @@ try {
 
     function mouseClick1() {
         //
-    }
-
-    // ******************************************** mouse 2 ********************
-
-    function mouseMove2() {
-        document.getElementById("canp2").style.border = "thick solid yellow";
     }
 
     function mouseOut2() {
@@ -184,9 +177,6 @@ try {
         vid2.pause();
     }
 
-    function mouseMove3() {
-        document.getElementById("canp3").style.border = "thick solid yellow";
-    }
 
     function mouseOut3() {
         document.getElementById("canp3").style.border = "thin  solid blue";
@@ -194,10 +184,6 @@ try {
 
     function mouseClick3() {
         //
-    }
-
-    function mouseMove4() {
-        document.getElementById("canp4").style.border = "thick solid yellow";
     }
 
     function mouseOut4() {
@@ -221,19 +207,11 @@ try {
         vid4.pause();
     }
 
-    function mouseMove5() {
-        document.getElementById("canp5").style.border = "thick solid yellow";
-    }
-
     function mouseOut5() {
         document.getElementById("canp5").style.border = "thin  solid blue";
     }
 
     function mouseClick5() {
-    }
-
-    function mouseMove6() {
-        document.getElementById("canp6").style.border = "thick solid yellow";
     }
 
     function mouseOut6() {
@@ -243,19 +221,11 @@ try {
     function mouseClick6() {
     }
 
-    function mouseMove7() {
-        document.getElementById("canp7").style.border = "thick solid yellow";
-    }
-
     function mouseOut7() {
         document.getElementById("canp7").style.border = "thin  solid blue";
     }
 
     function mouseClick7() {
-    }
-
-    function mouseMove8() {
-        document.getElementById("canp8").style.border = "thick solid yellow";
     }
 
     function mouseOut8() {
@@ -265,9 +235,6 @@ try {
     function mouseClick8() {
     }
 
-    function mouseMove9() {
-        document.getElementById("canp9").style.border = "thick solid yellow";
-    }
 
     function mouseOut9() {
         document.getElementById("canp9").style.border = "thin  solid blue";
