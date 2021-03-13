@@ -291,24 +291,11 @@ try {
     }
 
     if(use_html){
-      winP[1].ctx = ctx1;
-      winP[1].canp = canp1;
-      winP[2].ctx = ctx2;
-      winP[2].canp = canp2;
-      winP[3].ctx = ctx3;
-      winP[3].canp = canp3;
-      winP[4].ctx = ctx4;
-      winP[4].canp = canp4;
-      winP[5].ctx = ctx5;
-      winP[5].canp = canp5;
-      winP[6].ctx = ctx6;
-      winP[6].canp = canp6;
-      winP[7].ctx = ctx7;
-      winP[7].canp = canp7;
-      winP[8].ctx = ctx8;
-      winP[8].canp = canp8;
-      winP[9].ctx = ctx9;
-      winP[9].canp = canp9;
+      for(var i = 1; i <=9; i++){
+        var i_s = i.toString()
+        eval('winP[' + i_s + '].ctx = ctx' + i_s)
+        eval('winP[' + i_s + '].canp = canp' + i_s)
+      }
     }
 
     // *************************** the following are mouse click functions but of course can be called elsewhere *****
