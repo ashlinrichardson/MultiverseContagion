@@ -145,107 +145,15 @@ try {
 
     for(var i = 1; i <= 9; i++){
         var i_s = i.toString()
-        eval('function mouseMove' + i_s + '(){ document.getElementById("canp' + i_s + '").style.border = "thick solid yellow"}')
+        eval('function mouseMove' + i_s + '(){ document.getElementById("canp' + i_s + '").style.border = "thick solid yellow";}')
+        eval('function mouseOut' + i_s + '(){ document.getElementById("canp' + i_s + '").style.border = "thin solid blue";}')
+        eval('function mouseClick' + i_s + '(){ vid' + i_s + ' = document.getElementById("myVideo' + i_s + '"); vid' + i_s + '.loop = true; vid' + i_s + '.play(); }')
+        eval('var vid' + i_s + ';')
+        eval('function playVid' + i_s + '(){ vid' + i_s + ' = document.getElementById("myVideo' + i_s + '"); vid' + i_s + '.play(); }')
+        eval('function pauseVid' + i_s + '(){ vid' + i_s + '.pause(); }')
     }
-
-    function mouseOut1() {
-        document.getElementById("canp1").style.border = "thin  solid blue";
-    }
-
-    function mouseClick1() {
-        //
-    }
-
-    function mouseOut2() {
-        document.getElementById("canp2").style.border = "thin  solid blue";
-    }
-
-    var vid2;
-
-    function mouseClick2() {
-        vid2 = document.getElementById("myVideo2");
-        vid2.loop = true;
-        vid2.play();
-    }
-
-    function playVid2() {
-        vid2 = document.getElementById("myVideo2");
-        vid2.play();
-    }
-
-    function pauseVid2() {
-        vid2.pause();
-    }
-
-
-    function mouseOut3() {
-        document.getElementById("canp3").style.border = "thin  solid blue";
-    }
-
-    function mouseClick3() {
-        //
-    }
-
-    function mouseOut4() {
-        document.getElementById("canp4").style.border = "thin  solid blue";
-    }
-
-    var vid4;
-
-    function mouseClick4() {
-        vid4 = document.getElementById("myVideo4");
-        vid4.loop = true;
-        vid4.play();
-    }
-
-    function playVid4() {
-        vid4 = document.getElementById("myVideo4");
-        vid4.play();
-    }
-
-    function pauseVid4() {
-        vid4.pause();
-    }
-
-    function mouseOut5() {
-        document.getElementById("canp5").style.border = "thin  solid blue";
-    }
-
-    function mouseClick5() {
-    }
-
-    function mouseOut6() {
-        document.getElementById("canp6").style.border = "thin  solid blue";
-    }
-
-    function mouseClick6() {
-    }
-
-    function mouseOut7() {
-        document.getElementById("canp7").style.border = "thin  solid blue";
-    }
-
-    function mouseClick7() {
-    }
-
-    function mouseOut8() {
-        document.getElementById("canp8").style.border = "thin  solid blue";
-    }
-
-    function mouseClick8() {
-    }
-
-
-    function mouseOut9() {
-        document.getElementById("canp9").style.border = "thin  solid blue";
-    }
-
-    function mouseClick9() {
-    }
-
 
     // ************************************ CREATE CANVAS PANES *******************************************
-
     var winP = [];
 
     function CreateWinP() {
@@ -277,7 +185,6 @@ try {
         alert("making them all disappear except canvas");
         document.getElementById("windowpane").style.display = "none";
         document.getElementById("fields").style.display = "none";
-
     }
 
     function selPane3() {
@@ -316,13 +223,7 @@ try {
         document.getElementById("pane9").innerHTML = U[9].name;
     }
 
-
-
-
-
     // ***************************************************** NAMES OF UNIVERSES **************************
-
-
 
 	var UN = [];
 	UN[0] = "0 CLASSROOM 1";
