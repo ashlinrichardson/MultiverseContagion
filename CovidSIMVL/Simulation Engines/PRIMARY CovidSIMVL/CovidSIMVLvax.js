@@ -175,52 +175,10 @@ try {
 
     // *************************** the following are mouse click functions but of course can be called elsewhere *****
 
-    function selPane1() {
-        alert("Pane 1");
-        document.getElementById("pane1").innerHTML = "Hello World";
-    }
 
-    function selPane2() {
-        alert("Pane 2");
-        alert("making them all disappear except canvas");
-        document.getElementById("windowpane").style.display = "none";
-        document.getElementById("fields").style.display = "none";
-    }
-
-    function selPane3() {
-        alert("Pane 3");
-    }
-
-    function selPane4() {
-        alert("Pane 4");
-        document.getElementById("pane4").innerHTML = "Hello World 4";
-    }
-
-    function selPane5() {
-        alert("Pane 5");
-    }
-
-    function selPane6() {
-        alert("Pane 6");
-        document.getElementById("pane6").innerHTML = U[6].name;
-        //    document.getElementById("pane6").style.border = "thick solid yellow";
-        document.getElementById("canp6").style.border = "thick solid yellow";
-
-    }
-
-    function selPane7() {
-        alert("Pane 7");
-        document.getElementById("pane7").innerHTML = "Hello World 7";
-    }
-
-    function selPane8() {
-        alert("Pane 8");
-        document.getElementById("pane8").innerHTML = "Hello World 8";
-    }
-
-    function selPane9() {
-        alert("Pane ");
-        document.getElementById("pane9").innerHTML = U[9].name;
+    for(var i = 1; i <=9; i++){
+        var i_s = i.toString()
+        eval('selPane' + i_s + ' = function(){ alert("Pane ' + i_s + '"); document.getElementById("pane' + i_s + '").innerHTML = U[' + i_s + '].name; document.getElementById("canp' + i_s + '").style.border = "thick solid yellow";}')
     }
 
     // ***************************************************** NAMES OF UNIVERSES **************************
