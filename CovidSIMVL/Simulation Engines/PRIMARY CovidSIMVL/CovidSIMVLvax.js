@@ -145,7 +145,7 @@ try {
 
     for(var i = 1; i <= 9; i++){
         var i_s = i.toString()
-        eval('function mouseMove' + i_s + '(){ console.log("here"); document.getElementById("canp' + i_s + '").style.border = "thick solid yellow"}')
+        eval('function mouseMove' + i_s + '(){ document.getElementById("canp' + i_s + '").style.border = "thick solid yellow"}')
     }
 
     function mouseOut1() {
