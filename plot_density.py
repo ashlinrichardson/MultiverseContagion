@@ -70,21 +70,15 @@ for f in files: # accumulate values for each file
     for k in range(5):
         for i in range(max_T):
             v = 0
-            try:
-                v = value[f][k][i]
-            except:
-                pass
+            try: v = value[f][k][i]
+            except: pass
             # print("v,i", v, i)
             idx_y = math.floor((v + (y_skip / 2.)) / y_skip)
             idx_x = math.floor((i + (x_skip / 2.)) / x_skip)
-            idx_y = max(idx_y, 0)
-            idx_x = max(idx_x, 0)
-            idx_y = min(idx_y, y_inc - 1)
-            idx_x = min(idx_x, x_inc - 1)
+            idx_x, idx_y = max(idx_x, 0), max(idx_y, 0)
+            idx_x, idx_y = min(idx_x, x_inc - 1), min(idx_y, y_inc - 1)
             # print("idx", idx_x, "idy", idx_y, "xinc", x_inc, "yinc", y_inc)
-            count[k][y_inc - idx_y - 1, idx_x] += 1. # y axis is flipped!
-
-
+            count[k][y_inc - idx_y - 1, idx_x] += 1. # y axis is flipped
 
 lab = ["green","yellow","blue","red","orange"]
 for k in range(len(lab)):
