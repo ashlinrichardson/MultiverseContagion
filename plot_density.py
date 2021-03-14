@@ -94,6 +94,7 @@ for k in range(len(lab)):
     print(count[k].shape)
     print(count[k])
     plt.tight_layout()
+    plt.title(lab[k] + " (still need to adjust scales..)")
     plt.savefig("plot_" + lab[k] + ".png")
 
 sys.exit(0)
