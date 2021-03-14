@@ -1,6 +1,7 @@
 # run R simulation wrapper, in parallel # should use a work queue format
 import os
 import sys
+args = sys.argv
 
 def run(c):
     a = os.system(c)
@@ -8,7 +9,7 @@ def run(c):
 # make sure the compiled code is ready
 run("Rscript run.R 1")
 
-N_SIMULATIONS = 100
+N_SIMULATIONS = 100 if len(args) < 2 else int(args[1])
 CPU_COUNT = os.cpu_count()
 
 f = open('run.sh', 'wb')
