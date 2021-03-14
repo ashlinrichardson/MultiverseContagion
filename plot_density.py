@@ -81,7 +81,7 @@ for f in files: # accumulate values for each file
             idx_x = max(idx_x, 0)
             idx_y = min(idx_y, y_inc - 1)
             idx_x = min(idx_x, x_inc - 1)
-            print("idx", idx_x, "idy", idx_y, "xinc", x_inc, "yinc", y_inc)
+            # print("idx", idx_x, "idy", idx_y, "xinc", x_inc, "yinc", y_inc)
             count[k][y_inc - idx_y - 1, idx_x] += 1. # y axis is flipped!
 
 
@@ -94,7 +94,7 @@ for k in range(len(lab)):
     print(count[k].shape)
     print(count[k])
     plt.tight_layout()
-    plt.title(lab[k] + " (still need to adjust scales..)")
+    plt.title(lab[k]) # + " (still need to adjust scales..)")
     plt.savefig("plot_" + lab[k] + ".png")
 
 sys.exit(0)
