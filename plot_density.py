@@ -4,6 +4,9 @@ import math
 import numpy as np
 import matplotlib.pyplot as plt
 
+def err(m):
+    print("Error:", m); sys.exit(1)
+
 d = {}
 max_N = 0
 files = [x.strip() for x in os.popen("ls -1 count*.csv").readlines()]
@@ -11,10 +14,7 @@ print(len(files), "number of files")
 for f in files:
     lines = [x.strip() for x in open(f).readlines()]
     exp = '"","green","yellow","blue","red","orange"'
-    
-    if lines[0] != exp:
-        print("Error: expected: " + exp)
-        sys.exit(1)
+    if lines[0] != exp: err("expected: " + exp)
 
     data = []    
     for i in range(len(lines)):
@@ -25,8 +25,7 @@ for f in files:
             data.append(w)
 
     N = len(data)
-    if N > max_N:
-        max_N = N  # max number of iterations observed in batch 
+    if N > max_N: max_N = N  # max number of iter observed in batch 
     d[f] = data
 
 value = {} # heterogeneous tuple indexed by file, colour, then time
