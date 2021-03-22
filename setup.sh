@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # install dev. lib. for v8, whereas libnode-dev is a dependency
-sudo apt install libv8-dev libnode-dev
+sudo apt install libv8-dev libnode-dev libcurl4-openssl-dev
 
 # only attempt to install R if it's not already installed
 a="which R";
